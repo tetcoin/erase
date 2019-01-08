@@ -30,7 +30,6 @@ use smallvec::SmallVec;
 mod macros;
 
 mod errors;
-mod galois_8;
 mod galois_16;
 mod inversion_tree;
 mod matrix;
