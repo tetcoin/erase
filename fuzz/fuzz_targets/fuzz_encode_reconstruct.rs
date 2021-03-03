@@ -1,8 +1,8 @@
 #![no_main]
 #[macro_use] extern crate libfuzzer_sys;
-extern crate reed_solomon_erasure;
+extern crate erase;
 
-use reed_solomon_erasure::ReedSolomon;
+use erase::ReedSolomon;
 
 fuzz_target!(|data: &[u8]| {
     if data.len() >= 7 {

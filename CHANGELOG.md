@@ -25,7 +25,7 @@
   - `-march=native` is not available for GCC on Android, see issue #23
 
 ## 3.1.0
-- Impl'd `std::error::Error` for `reed_solomon_erasure::Error` and `reed_solomon_erasure::SBSError`
+- Impl'd `std::error::Error` for `erase::Error` and `erase::SBSError`
   - See issue [#17](https://github.com/darrenldl/reed-solomon-erasure/issues/17), suggested by [DrPeterVanNostrand](https://github.com/DrPeterVanNostrand)
 - Added fuzzing suite
   - No code changes due to this as no bugs were found

@@ -214,10 +214,10 @@ impl Default for ParallelParam {
 /// # Example
 ///
 /// ```
-/// # #[macro_use] extern crate reed_solomon_erasure;
-/// # use reed_solomon_erasure::*;
+/// # #[macro_use] extern crate erase;
+/// # use erase::*;
 /// # fn main () {
-/// use reed_solomon_erasure::galois_8::Field;
+/// use erase::galois_8::Field;
 /// let r: ReedSolomon<Field> = ReedSolomon::new(3, 2).unwrap();
 ///
 /// let mut sbs = ShardByShard::new(&r);

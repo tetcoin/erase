@@ -1,11 +1,8 @@
-# reed-solomon-erasure
-[![Build Status](https://travis-ci.org/darrenldl/reed-solomon-erasure.svg?branch=master)](https://travis-ci.org/darrenldl/reed-solomon-erasure)
-[![Build status](https://ci.appveyor.com/api/projects/status/47c0emjoa9bhpjlb/branch/master?svg=true)](https://ci.appveyor.com/project/darrenldl/reed-solomon-erasure/branch/master)
-[![codecov](https://codecov.io/gh/darrenldl/reed-solomon-erasure/branch/master/graph/badge.svg)](https://codecov.io/gh/darrenldl/reed-solomon-erasure)
-[![Coverage Status](https://coveralls.io/repos/github/darrenldl/reed-solomon-erasure/badge.svg?branch=master)](https://coveralls.io/github/darrenldl/reed-solomon-erasure?branch=master)
-[![Crates](https://img.shields.io/crates/v/reed-solomon-erasure.svg)](https://crates.io/crates/reed-solomon-erasure)
-[![Documentation](https://docs.rs/reed-solomon-erasure/badge.svg)](https://docs.rs/reed-solomon-erasure)
-[![dependency status](https://deps.rs/repo/github/darrenldl/reed-solomon-erasure/status.svg)](https://deps.rs/repo/github/darrenldl/reed-solomon-erasure)
+# erase - reed-solomon-erasure
+[![Build Status](https://travis-ci.org/tetcoin/erase.svg?branch=master)](https://travis-ci.org/tetcoin/erasee)
+[![Crates](https://img.shields.io/crates/v/erase.svg)](https://crates.io/crates/erase)
+[![Documentation](https://docs.rs/erase/badge.svg)](https://docs.rs/erase)
+[![dependency status](https://deps.rs/repo/github/tetcoin/erase/status.svg)](https://deps.rs/repo/github/tetcoin/erase)
 
 Rust implementation of Reed-Solomon erasure coding
 
@@ -30,15 +27,15 @@ reed-solomon-erasure = { version = "3.1", default-features = false }
 ```
 and the following to your crate root
 ```rust
-extern crate reed_solomon_erasure;
+extern crate erase;
 ```
 
 ## Example
 ```rust
 #[macro_use(shards)]
-extern crate reed_solomon_erasure;
+extern crate erase;
 
-use reed_solomon_erasure::*;
+use erase::*;
 
 fn main () {
     let r = ReedSolomon::new(3, 2).unwrap(); // 3 data shards, 2 parity shards

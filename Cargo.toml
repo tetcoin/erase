@@ -1,5 +1,5 @@
 [package]
-name= "reed-solomon-erasure"
+name= "erase"
 version = "4.0.0"
 authors = ["Darren Ldl <darrenldldev@gmail.com>"]
 edition = "2018"
@@ -11,9 +11,9 @@ exclude = [
 
 description = "Rust implementation of Reed-Solomon erasure coding"
 
-documentation = "https://docs.rs/reed-solomon-erasure"
-homepage= "https://github.com/darrenldl/reed-solomon-erasure"
-repository= "https://github.com/darrenldl/reed-solomon-erasure"
+documentation = "https://docs.rs/erase"
+homepage= "https://github.com/tetcoin/erase"
+repository= "https://github.com/tetcoin/erase"
 
 readme= "README.md"
 
@@ -28,10 +28,10 @@ default = [] # simd off by default
 simd-accel = ["cc", "libc"]
 
 [badges]
-travis-ci = { repository = "darrenldl/reed-solomon-erasure" }
-appveyor= { repository = "darrenldl/reed-solomon-erasure" }
-codecov = { repository = "darrenldl/reed-solomon-erasure" }
-coveralls = { repository = "darrenldl/reed-solomon-erasure" }
+travis-ci = { repository = "tetcoin/erase" }
+appveyor= { repository = "tetcoin/erase" }
+codecov = { repository = "tetcoin/erase" }
+coveralls = { repository = "tetcoin/erase" }
 
 [dependencies]
 smallvec = "0.6"
